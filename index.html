@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+    <link href="style.css" rel="stylesheet">
+    <meta charset="utf-8">
+
+	<title>SpeechGPT</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1091.0" data-gr-ext-installed="">
+
+<div class="container" >
+<header role="banner">
+</header>
+<main role="main">
+<article itemscope itemtype="https://schema.org/BlogPosting">
+
+<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
+    <h2 style="text-align: center;">SpeechGPT</h2>
+</div>
+
+<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
+    <h3>Cross-modal Instruction Following:</h3>
+		<div class="table-responsive pt-3">
+			<table class="table table-hover pt-2">
+			<thead>
+			<tr>
+            <th style="text-align: center">Instructions</th>
+			<th style="text-align: center">Inputs</th>
+            <th style="text-align: center">outputs</th>
+			</tr>
+			</thead>
+			<tbody>
+            <td style="text-align: center;vertical-align:middle;width: 800px">Can you transcribe the speech into a written format?</td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 140px;"><source src="question/asr_input_1.flac" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center;vertical-align:middle;width: 800px">I'm afraid there are no signs here said he.</td>
+            </tr>
+
+            <tr>
+            <td style="text-align: center;vertical-align:middle;width: 800px">Listen to the speech and write down its content.</td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 140px;"><source src="question/asr_input_2.flac" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px">Did anyone know that these proofs would be there no one the printer.</td>
+            </tr>
+            
+            <tr>
+            <td style="text-align: center;vertical-align:middle;width: 800px">Would you mind speaking these words as naturally as possible? </td>
+            <td style="text-align: center;vertical-align:middle;width: 800px">Today is a sunny day and I'm happy to be here.</td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 140px;"><source src="answer/tts_0.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+            </tr>
+
+            <tr>
+            <td style="text-align: center;vertical-align:middle;width: 800px">Would you please speed-read the following sentence?  </td>
+            <td style="text-align: center;vertical-align:middle;width: 800px">I am a large language model that can listen and speak, a member of Fudan University, and glad to talk with you.</td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 140px;"><source src="answer/tts_1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+            </tr>
+
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
+    <h3>Speech Dialogue:</h3>
+		<div class="table-responsive pt-3">
+			<table class="table table-hover pt-2">
+			<thead>
+			<tr>
+            <th style="text-align: center">Inputs</th>
+			<th style="text-align: center">Speech Outputs</th>
+            <th style="text-align: center">Text outputs</th>
+			</tr>
+			</thead>
+			<tbody>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 140px;"><source src="question/question_0.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 140px;"><source src="answer/answer_0.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center;vertical-align:middle;width: 800px">I am ELLS, an AI chatbot created by the FudanNLP Lab in the School of Computer Science, Fudan University. I was born in Shanghai and I live in a cluster of servers in Shanghai, China.</td>
+            </tr>
+			
+            <tr>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 140px;"><source src="question/question_1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 140px;"><source src="answer/answer_2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center;vertical-align:middle;width: 800px">The primary colors are red, blue, and yellow. These colors are the building blocks of all other colors and are used to create the full spectrum of colors.</td>
+            </tr>
+			
+            <tr>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 140px;"><source src="question/question_2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 140px;"><source src="answer/answer_2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px">The capital of France is Paris. It is located in the northern part of the country, along the Seine River.</td>
+            </tr>
+			
+            <tr>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 140px;"><source src="question/question_3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 140px;"><source src="answer/answer_3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px">This article is very interesting and thought-provoking. It provides an in-depth look at the current state of the field and suggests potential areas for further research.</td>
+            </tr>
+			
+            <tr>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 140px;"><source src="question/question_4.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 140px;"><source src="answer/answer_4.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px">Check out this latest tech trend! 🤖 AI-powered chatbots are revolutionizing customer service and providing more efficient, personalized support. 🤖 🙋</td>    
+            </tr>
+            
+            <tr>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 140px;"><source src="question/question_5.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 140px;"><source src="answer/answer_5.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px">It is understandable that your girlfriend is angry with you. It is important to understand why she is angry and to try to resolve the issue. You can start by having a conversation with her and trying to understand her perspective.</td>
+            </tr>
+            
+            <tr>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 140px;"><source src="question/question_6.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 140px;"><source src="answer/answer_6.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px">Sure, here are some suggestions: 
+                1. Make a salad with fresh vegetables. 
+                2. Grill some lean meat. 
+                3. Roast a vegetable-based dish like a cauliflower casserole. 
+                4. Make a soup with vegetables and legumes. 
+                5. Try a new recipe.;</td>    
+            </tr>
+            
+            <tr>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 140px;"><source src="question/question_7.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 140px;"><source src="answer/answer_7.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px">Yes, I do know Stephen Curry.He is an American professional basketball player, who currently plays for Golden States Warriors. He is two-time NBA most valuable player and four-time NBA all star.</td>
+            </tr>
+            
+            <tr>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 140px;"><source src="question/question_8.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 140px;"><source src="answer/answer_8.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px">Going to the moon is a challenging task that requires a lot of planning and resources. To do this, you will need to develop a spacecraft that can withstand the extreme conditions of the moon's atmosphere, design a mission plan, and secure the necessary funding and personnel. Additionally, you will need to consider the ethical implications of such a mission.</td>
+            </tr>
+            
+            <tr>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 140px;"><source src="question/question_9.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 140px;"><source src="answer/answer_9.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px">The sun is out, the sky is blue,
+                The flowers bloom and the birds sing too,
+                The days are long, the nights are short,
+                The spring is here and it's so sweet and warm!</td>
+            </tr>
+
+            </tbody>
+            </table>
+        </div>
+</div>
+
